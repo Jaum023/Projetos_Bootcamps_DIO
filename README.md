@@ -1,0 +1,1 @@
+DIO é uma plataforma em que é possível aprender através de video-aulas, desafios de códigos e projetos. Os projetos serão armazenados nesse repositório
