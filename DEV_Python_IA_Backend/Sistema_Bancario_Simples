@@ -1,0 +1,26 @@
+saldo = 100.00
+opcao = 4
+
+
+while opcao != 0:
+    opcao = int(input("[0] Sair, [1] Sacar, [2] Depositar, [3] Consultar extrato | Opção: "))
+   
+    if opcao == 1:
+        valor_saque = int(input("Digite o valor desejado do saque: "))
+        if valor_saque <= saldo:
+            saldo -= valor_saque
+        else:
+            print('Saldo insuficiente')
+           
+    elif opcao == 2:
+        valor_deposito = int(input("Digite o valor desejado do depósito: "))
+        saldo += valor_deposito
+       
+    elif opcao == 3:
+        print(f"Saldo atual: R$ {saldo:.2f}")
+   
+    elif opcao == 0:
+        print("Obrigado por utilizar o Banco Clientefy, volte sempre!")
+       
+    else:
+        print("Opção inválida! Tente novamente.")
